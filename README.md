@@ -13,7 +13,7 @@ Additional resources like reading materials and links to online tutorials for fu
 
 Clone the repository to your local machine using `git clone https://github.com/msorkhpar/ISU-CS-302` command or use it
 on Codespace.
-
+- Check out the Python-code branch
 - Run the following in your terminal:
 
 ```shell
