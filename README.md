@@ -37,6 +37,8 @@ find . -name "requirements.txt" -type f -exec ./.venv/bin/pip3 install -r '{}' '
 - [Merge Sort, Lecture1, page 16](01_sorting/03_merge_sort.py)
 - [Challenge, Lecture1, page 23](01_sorting/03_merge_sort.py)
 
+## External Resources
+- Heap: https://www.cs.usfca.edu/~galles/visualization/Heap.html
 ## License
 
 This repository is licensed under the MIT License - see
