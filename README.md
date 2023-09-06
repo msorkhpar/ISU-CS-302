@@ -37,6 +37,14 @@ find . -name "requirements.txt" -type f -exec ./.venv/bin/pip3 install -r '{}' '
 - [Merge Sort, Lecture1, page 16](01_sorting/03_merge_sort.py)
 - [Challenge, Lecture1, page 23](01_sorting/03_merge_sort.py)
 
+### Linked List
+- [Singly Linked Lust](02_linked_list/01_singly_linked_list.py)
+- [Doubly Linked Lust](02_linked_list/02_doubly_linked_list.py)
+
+### Binary Tree
+- [Binary Tree](03_binary_tree/01_simple_binary_tree.py)
+
+
 ## External Resources
 - Heap: https://www.cs.usfca.edu/~galles/visualization/Heap.html
 ## License
