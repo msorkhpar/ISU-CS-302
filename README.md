@@ -29,6 +29,7 @@ on Codespace.
 
 - [Tree](02_LinkedList_Tree_String/tree.c)
 - [Tree Traversal](02_LinkedList_Tree_String/TreeTravesrsal.c)
+- [Binary Search Tree Traversal using stack](02_LinkedList_Tree_String/BST_stack_traversal.c)
 
 ## License
 
