@@ -1,17 +1,13 @@
-# https://www.tutorialspoint.com/python_data_structure/python_linked_lists.htm
 from __future__ import annotations
-
-import logging
-import math
 
 from utils.loader import load_base_configs
 
 
 class Node:
     def __init__(self, data):
-        self.data = data
-        self.left = None
-        self.right = None
+        self.data:int  = data
+        self.left: Node | None = None
+        self.right: Node | None = None
 
 
 def insert_node(tree, n):
@@ -78,7 +74,7 @@ class Stack:
         return self.stack[self.top]
 
 
-def pre_order_stack(stack: Stack, tree, logger):
+def pre_order_stack(stack: Stack, tree: Node, logger):
     '''
     struct node *temp;
     printf("the Pre-order traversal using stack is \n");
@@ -125,7 +121,7 @@ def pre_order_stack(stack: Stack, tree, logger):
                 break
 
 
-def in_order_stack(stack, tree, logger):
+def in_order_stack(stack: Stack, tree: Node, logger):
     '''
     void In_order_Stack(struct node *Stack[], struct node *tree) {
         struct node *current;
