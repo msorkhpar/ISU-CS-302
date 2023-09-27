@@ -18,7 +18,8 @@ def nice_string(arr, i, difference, n):
 
 def main():
     n = int(input("Enter a non-negative number: "))
-    if n < 0:
+    if n < 0 or n % 2 == 1:
+        print("Invalid input")
         return
     arr = [0] * n
     nice_string(arr, 0, 0, n)
