@@ -59,6 +59,7 @@ def shortest_path(graph: List[List[int]], node_type: str):
 if __name__ == '__main__':
     env, logger = load_base_configs()
     edge_list_path = env.str('EDGE_LIST_PATH')
-    adjacency_matrix, node_type = load_graph_from_file(edge_list_path)
+    node_type = env.str('NODE_TYPE')
+    adjacency_matrix = load_graph_from_file(edge_list_path, node_type)
     visualize_adj_matrix(adjacency_matrix, node_type)
     shortest_path(adjacency_matrix, node_type)
