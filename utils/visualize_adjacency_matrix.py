@@ -5,13 +5,16 @@ import networkx as nx
 from matplotlib import pyplot as plt
 
 
-def visualize_adj_matrix(adjacency_matrix: List[List[int]], directed: bool = True):
+def visualize_adj_matrix(adjacency_matrix: List[List[int]], node_type: str, directed: bool = True):
     if directed:
         graph = nx.DiGraph()
     else:
         graph = nx.Graph()
     num_nodes = len(adjacency_matrix)
-    graph.add_nodes_from(range(num_nodes))
+    if node_type == "int":
+        graph.add_nodes_from(range(num_nodes))
+    else:
+        graph.add_nodes_from([chr(65 + i) for i in range(num_nodes)])
 
     for i in range(num_nodes):
         for j in range(num_nodes):
@@ -19,7 +22,10 @@ def visualize_adj_matrix(adjacency_matrix: List[List[int]], directed: bool = Tru
                 continue
             weight = adjacency_matrix[i][j]
             if weight != sys.maxsize:
-                graph.add_edge(i, j, weight=weight)
+                if node_type == "int":
+                    graph.add_edge(i, j, weight=weight)
+                else:
+                    graph.add_edge(chr(65 + i), chr(65 + j), weight=weight)
 
     pos = nx.spring_layout(graph)
 
